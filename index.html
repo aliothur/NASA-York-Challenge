@@ -80,7 +80,7 @@ var monthNames = "JanFebMarAprMayJunJulAugSepOctNovDec";
 var today = new Date();
 var thisDay;
 var monthDays = new montharr(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
-year = today.getYear() +1900;
+year = today.getYear();
 thisDay = today.getDate();
 if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) monthDays[1] = 29;
 nDays = monthDays[today.getMonth()];
